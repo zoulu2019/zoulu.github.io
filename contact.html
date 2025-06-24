@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>深圳市源溯兴电子科技有限公司 - 首页</title>
+    <title>深圳市源溯兴电子科技有限公司 - 联系我们</title>
     <!-- 引入Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- 引入自定义CSS -->
@@ -12,7 +12,7 @@
 <body>
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="公司Logo" height="60"></a>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="公司Logo" height="30"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,42 +42,41 @@
         </div>
     </nav>
 
-    <!-- 轮播图 -->
-    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/DDR5.png" class="d-block w-50 mx-auto" alt="产品1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                </div>
+    <!-- 联系信息 -->
+    <div class="container my-5">
+        <h2>联系我们</h2>
+        <div class="row">
+            <!-- 联系详情 -->
+            <div class="col-md-6 mb-4">
+                <h5>联系方式</h5>
+                <p><strong>地址：</strong>广东省深圳市福田区深南大道6021花样年喜年中心A1718</p>
+                <p><strong>电话：</strong>+86 13502886108</p>
+                <p><strong>邮箱：</strong>sanschen@szsource.com</p>
+                <!-- 联系表单 -->
+                <h5>发送消息</h5>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">邮箱</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">消息</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送</button>
+                </form>
             </div>
-            <div class="carousel-item">
-                <img src="images/DDR4.png" class="d-block w-50 mx-auto" alt="产品2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/emmc.png" class="d-block w-50 mx-auto" alt="产品3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                </div>
+            <!-- 地图 -->
+            <div class="col-md-6">
+                <h5>地图位置</h5>
+                <!-- 这里可以嵌入Google地图或其他地图服务 -->
+                <iframe src="https://j.map.baidu.com/91/s9k" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">上一张</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">下一张</span>
-        </button>
-    </div>
-
-    <!-- 欢迎部分 -->
-    <div class="container my-5">
-        <h2 class="text-center">欢迎来到我们的公司</h2>
-        <p class="lead text-center">深圳市源溯兴电子科技有限公司是一家专注于电子元器件代理的科技型企业。公司立足深圳，辐射全国，致力于为客户提供高品质的电源管理、触控、存储及传感器等核心电子元器件产品，助力客户在消费电子、工业控制、物联网、汽车电子等领域的创新发展。</p>
     </div>
 
     <!-- 页脚 -->
