@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>深圳市源溯兴电子科技有限公司 - 联系我们</title>
+    <title>深圳市源溯兴电子科技有限公司 - 公司简介</title>
     <!-- 引入Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 引入自定义CSS -->
-    <!--link rel="stylesheet" href="css/styles.css"-->
+    <!-- 引入自定义CSS -->    <!--link rel="stylesheet" href="css/styles.css"-->
     <style>
 		<!-- 全局样式  -->
 		body {
@@ -22,6 +21,39 @@
 			background-color: rgba(0, 0, 0, 0.5);
 			border-radius: 10px;
 			padding: 10px 20px;
+		}
+		
+		.partners-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			margin-bottom: 30px;
+		}
+
+		.partner-card {
+			background-color: #fff;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s;
+			width: 150px;
+		}
+
+		.partner-card:hover {
+			transform: translateY(-5px);
+		}
+
+		.partner-card img {
+			width: 100%;
+			height: 100px;
+			object-fit: contain;
+		}
+
+		.partner-card p {
+			margin: 15px 0;
+			font-weight: bold;
+			color: #555;
 		}
     </style>
 </head>
@@ -52,50 +84,56 @@
 				  </ul>
 				</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="partners.html">合作伙伴</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="contact.html">联系我们</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- 联系信息 -->
+    <!-- 我们的合作伙伴 -->
     <div class="container my-5">
-        <h2>联系我们</h2>
+        <h2>我们的合作伙伴</h2>
 		<hr>
-        <div class="row">
-            <!-- 联系详情 -->
-            <div class="col-md-6 mb-4">
-                <h5>联系方式</h5>
-                <p><strong>地址：</strong>广东省深圳市福田区深南大道6021花样年喜年中心A1718</p>
-                <p><strong>电话：</strong>+86 13502886108</p>
-                <p><strong>邮箱：</strong>sanschen@szsource.com</p>
-                <!-- 联系表单 -->
-                <h5>发送消息</h5>
-                <form action="#" method="post">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">姓名</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">邮箱</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">消息</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">发送</button>
-                </form>
+
+        <div class="partners-grid">
+            <!-- 合作伙伴Logo示例 -->
+            <div class="partner-card">
+                <img src="images/partner1.png" alt="1" />
             </div>
-            <!-- 地图 -->
-            <div class="col-md-6">
-                <h5>地图位置</h5>
-                <!-- 这里可以嵌入Google地图或其他地图服务 -->
-                <iframe src="https://j.map.baidu.com/91/s9k" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="partner-card">
+                <img src="images/partner2.png" alt="2" />
             </div>
+            <div class="partner-card">
+                <img src="images/partner3.png" alt="3" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner4.png" alt="4" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner5.png" alt="5" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner6.png" alt="6" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner7.png" alt="7" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner8.png" alt="8" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner9.png" alt="9" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner10.png" alt="10" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner11.png" alt="11" />
+            </div>
+            <div class="partner-card">
+                <img src="images/partner12.png" alt="12" />
+            </div>
+            <!-- 更多合作伙伴... -->
         </div>
     </div>
 
